@@ -14,7 +14,7 @@ const addTodo = () => {
     const li = document.createElement("li");  // สร้าง <li> ใหม่
     li.textContent = todoText;                // กำหนดข้อความให้ <li>
     const btn = document.createElement("button"); //ปุ่มลบ
-    btn.textContent = "ลบ";
+    btn.textContent = "ลบ"; 
     btn.onclick = () => {
       li.remove(); //ลบรายการเมื่อคลิกปุ่ม
       saveTodos(); //บันทึก
@@ -22,7 +22,7 @@ const addTodo = () => {
     li.appendChild(btn);  //ใส่ปุ่มลบใน <li>
     todoList.appendChild(li);  //เพิ่ม <li> เข้าไปในรายการ
     todoInput.value = ""; // ล้างช่องกรอกหลังเพิ่มรายการ
-    saveTodos();       //บันทึกรายการลง LocalStoragำ
+    saveTodos();       //บันทึกรายการลง LocalStorag
   }
 };
 
